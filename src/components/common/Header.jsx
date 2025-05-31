@@ -7,7 +7,7 @@ const Header = () => {
 const [open,setOpen] = useState(false);
   return (
     <>
-    <div className='flex gap-10 justify-between items-center px-6 py-8  '>
+    <div className='flex gap-10 justify-between items-center px-6 py-5    '>
         <h2 className='font-bold text-3xl flex gap-1'><img className="w-auto h-[40px]" src={graphiclogo}/>OFF<span className="text-blue-500">VERSE</span></h2>
         <div className="flex md:hidden" onClick={()=>setOpen(!open)}>
 {
