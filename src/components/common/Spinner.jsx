@@ -27,9 +27,9 @@ const Spinner = ({ isLoading, setLoading }) => {
           : "top-4 left-4 translate-x-0 translate-y-0 scale-50 opacity-0 pointer-events-none z-0"
       }`}
     >
-      <div className="flex items-center space-x-2">
+      <div className="flex flex-col items-center space-x-2">
         <h1 className="text-blue-500 text-md">{percentage}%</h1>
-        <h1 className="animate-pulse font-bold text-md md:text-2xl px-2 text-white">OFF<span className="text-blue-500">VERSE</span></h1>
+        <h1 className=" font-bold text-md md:text-2xl px-2 text-white">OFF<span className="text-blue-500">VERSE</span></h1>
         
       </div>
 

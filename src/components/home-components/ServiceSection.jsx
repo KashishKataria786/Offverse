@@ -15,6 +15,7 @@ const Data = [
         heading:"Youtube Management",
         description:"In today’s digital landscape, having a strong online presence is crucial. At [Your Company Name], we specialize in SEO strategies that boost your visibility, drive organic traffic, and increase your ROI. Whether you’re a startup or an established business, our tailored solutions help you dominate search engine results and connect with your target audience."
     },
+    
 ]
 const ServiceSection = () => {
 

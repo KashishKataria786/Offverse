@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import {  IoCloseSharp } from "react-icons/io5"
 import graphiclogo from '../../assets/404graphic.png'
 import { motion , AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 const [open,setOpen] = useState(false);
@@ -16,10 +17,11 @@ const [open,setOpen] = useState(false);
         }
         </div>
         <ul className='hidden md:flex gap-9 px-8'>
-            <li>Home</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+           <li><Link to ='/'>Home</Link></li>
+            <li><Link to ='/about'>About us</Link></li>
+            <li><Link to ='/services'>Services</Link></li>
+            <li><Link to ='/portfolio'>Portfolio</Link></li>
+            <li><Link to ='/contact'>Contact</Link></li>
         </ul>
     </div>
        <AnimatePresence>
@@ -29,18 +31,19 @@ const [open,setOpen] = useState(false);
           key="menu"
             initial={{ x: '-100%' }}
             animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{ duration: 0.6, ease: 'easeInOut' }}
-              className="fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-50"
+            exit={{ x: '-100%' }}
+            transition={`${open ? { duration: 0.6, ease: 'easeInOut' }:{ duration: 0.6, ease: 'easeOutIn' }}`}
+              className="fixed top-0 left-0 w-[64%]  h-full bg-[#040404f6] shadow-lg z-50"
             >
               
           <div className="fixed p-8 left-0 top-0 bg-[#040404f6] text-white    h-[100%] w-[75%]">
 
             <ul className=' gap-9   text-left text-xl md:text-md space-y-2  '>
-            <li>Home</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li><Link to ='/'>Home</Link></li>
+            <li><Link to ='/about'>About us</Link></li>
+            <li><Link to ='/services'>Services</Link></li>
+            <li><Link to ='/portfolio'>Portfolio</Link></li>
+            <li><Link to ='/contact'>Contact</Link></li>
         </ul>
           </div>
           </motion.div>
