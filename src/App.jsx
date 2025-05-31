@@ -4,6 +4,7 @@ import './App.css'
 import HomePage from './pages/HomePage.jsx'
 import { useEffect, useState } from 'react';
 import Spinner from './components/Spinner.jsx';
+import AboutPage from './pages/AboutPage.jsx';
 
 const RouteChangeSpinner =()=>{
   const location = useLocation();
@@ -15,7 +16,7 @@ const RouteChangeSpinner =()=>{
     return ()=>clearTimeout(timeout);
   },[location])
 
-  return loading ? <Spinner/>:null;
+  return loading ? <Spinner isLoading={loading}/>:null;
 }
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     <RouteChangeSpinner/>
     <Routes>
       <Route path='/' element={<HomePage/>}/>
+      <Route path='/about' element={<AboutPage/>}/>
     </Routes>
     </>
   )
