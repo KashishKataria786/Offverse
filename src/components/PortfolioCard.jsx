@@ -1,12 +1,16 @@
 import React from 'react'
-import videoEditor from "../assets/videoEditor.webp";
+import videoEditor from "../assets/videoeditor.webp";
 import { Link } from 'react-router-dom';
 import {BiRightArrow } from 'react-icons/bi';
 
-const PortfolioCard = ({typeArray, typeOfProject , ProjectLink, projectDescription  }) => {
+const PortfolioCard = ({typeArray, typeOfProject , ProjectLink, projectDescription , index }) => {
   return (
     <div className='p-4   rounded-sm border-black shadow-xl   space-y-3 text-left'>
-        <img src={videoEditor} />
+        
+        <div className='relative '>
+            <img src={videoEditor} ></img>
+            <p className='absolute -top-20 left-0  font-bold text-[200px] z-40 opacity-30'>{index}</p>
+        </div>
         <div className='space-y-2'>
             <ul className='flex gap-2'>
                 {typeArray?.map((item,index)=>{

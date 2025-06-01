@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/common/Layout'
-import PortfolioCard from '../components/PortfolioCard'
+import PortfolioCard from '../components/PortfolioCard.jsx'
 
 const Data = [
   {
@@ -34,7 +34,7 @@ const PortfolioPage = () => {
       <div className='md:grid grid-cols-3 gap-5 space-y-10 py-5'>
         {Data?.map((item,index)=>{
             return (
-                <PortfolioCard key={index} typeArray={item.typeArray} typeOfProject={item.typeOfProject}  ProjectLink={item.ProjectLink} projectDescription={item.projectDescription}/>
+                <PortfolioCard key={index} index={index} typeArray={item.typeArray} typeOfProject={item.typeOfProject}  ProjectLink={item.ProjectLink} projectDescription={item.projectDescription}/>
             )
         })}
       </div>
