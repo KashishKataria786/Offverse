@@ -13,7 +13,7 @@ const ContactSection = () => {
             <p className=' text-md md:text-2xl font-semibold px-4'>Fill  out the below form</p>
             <button className='w-full md:w-auto'> Google Form </button>
             </div>
-            <div className=' space-y-9 md:px-4'>
+            <div className=' space-y-9 md:px-4 py-8 md:py-0 '>
 
                 <ContactCard head={"Google Form"} desc={"Fill out the below form"} index={0} form={true}/>
                 <ContactCard head={"Text us At (Optional)"} desc={"+91 9485686863 or Offverse.business@gmail.com"} index={1} />

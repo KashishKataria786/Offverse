@@ -38,7 +38,7 @@ const [open,setOpen] = useState(false);
               
           <div className="fixed p-8 left-0 top-0 bg-[#040404f6] text-white    h-[100%] w-[75%]">
   <h2 className='font-bold text-3xl flex gap-1 mb-10'>OFF<span className="text-blue-500">VERSE</span></h2>
-            <ul className=' gap-9   text-left text-md md:text-md font-light space-y-2  '>
+            <ul className=' gap-9  text-left text-md md:text-md font-light space-y-2  '>
               
             <li className=""><Link to ='/'>Home</Link></li>
             <li><Link to ='/about'>About us</Link></li>
