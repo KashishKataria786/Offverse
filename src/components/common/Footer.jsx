@@ -27,7 +27,7 @@ const Footer = () => {
          </ul>
       </div>
     </div>
-    <div className='text-[10px] font-light py-2 border border-t-gray-700'>
+    <div className='text-[10px] font-light py-2 border-t-1 border-gray-900'>
       <h6>Copyright @offvers.co 2025</h6>
     </div>
     </>

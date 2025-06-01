@@ -9,7 +9,7 @@ const Data = [
     },
     {id:2,
         heading:"Content Management",
-        description:"In today’s digital landscape, having a strong online presence is crucial. At [Your Company Name], we specialize in SEO strategies that boost your visibility, drive organic traffic, and increase your ROI. Whether you’re a startup or an established business, our tailored solutions help you dominate search engine results and connect with your target audience."
+        description:    "Easily manage, update, and organize your website content without technical stress. Our content management solutions help businesses stay consistent, boost SEO, and keep their websites fresh and engaging—whether it's blogs, landing pages, or media assets."
     },
     {id:2,
         heading:"Youtube Management",
@@ -23,7 +23,6 @@ const ServiceSection = () => {
     <>
     <div className='py-4 md:px-8 px-4 mt-10'>
         <h4 className='text-left text-4xl font-bold md:text-7xl mb-10'>Our<span className='text-blue-600'> Services</span> </h4>
-        
       <div className='md:grid grid-cols-3 gap-5 space-y-10 py-5'>
         {Data?.map((item,index)=>{
             return (
