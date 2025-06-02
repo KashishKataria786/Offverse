@@ -5,15 +5,15 @@ import { data } from 'react-router-dom'
 const Data = [
     {id:1,
         heading:"Video Editing",
-        description:"In today’s digital landscape, having a strong online presence is crucial. At [Your Company Name], we specialize in SEO strategies that boost your visibility, drive organic traffic, and increase your ROI. Whether you’re a startup or an established business, our tailored solutions help you dominate search engine results and connect with your target audience."
+        description:"Your raw footage deserves more than just cuts and transitions. Our editors bring your vision to life with clean, modern editing, smooth pacing, sound design, subtitles, and custom graphics. Whether it's vlogs, tutorials, interviews, or reels—we edit to match your brand’s style and audience expectations."
     },
     {id:2,
         heading:"Content Management",
-        description:    "Easily manage, update, and organize your website content without technical stress. Our content management solutions help businesses stay consistent, boost SEO, and keep their websites fresh and engaging—whether it's blogs, landing pages, or media assets."
+        description: "Staying consistent and relevant takes more than just great ideas—it needs a plan. We help you map out a content calendar, repurpose long-form videos into shorts, create scripts, and organize assets so your content flows smoothly across platforms. With us, your content is always a step ahead and ready to perform."
     },
     {id:2,
         heading:"Youtube Management",
-        description:"In today’s digital landscape, having a strong online presence is crucial. At [Your Company Name], we specialize in SEO strategies that boost your visibility, drive organic traffic, and increase your ROI. Whether you’re a startup or an established business, our tailored solutions help you dominate search engine results and connect with your target audience."
+        description:"We take the stress out of running a YouTube channel so you can focus on creating. From content strategy and SEO-optimized titles to custom thumbnails and upload scheduling—we handle everything. Our team ensures your channel grows consistently with engaging content, analytics tracking, and tailored growth strategies that actually work."
     },
     
 ]

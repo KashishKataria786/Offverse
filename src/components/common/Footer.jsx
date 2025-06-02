@@ -10,11 +10,11 @@ const Footer = () => {
     <div className='md:grid grid-cols-2'>
       <div className='p-6 space-y-8 col-span-1 text-left'>
         <h2 className='text-3xl md:text-6xl font-bold'>Lets Work Together</h2>
-        <p>We Create Experiences That you and Youyr Audiencce wont ever forget</p>
+        <p>You bring the ideas—we’ll bring them to life. From first draft to final edit, we’ve got your back, handling the details so you can focus on doing what you love.</p>
         <ul className='space-y-4'>
-          <li className='flex gap-2 items-center'><FaPhone/>+91 9485686833</li>
-          <li className='flex gap-2 items-center'><MdEmail/>Offverse.business@gmail.com</li>
-          <li className='flex gap-2 items-center'><FaLocationPin/>Golf Course Road, Gurugram, Haryana, 124001</li>
+          <li className='flex gap-2 items-center'><FaPhone className='text-blue-600'size={30}/>+91 9485686833</li>
+          <li className='flex gap-2 items-center'><MdEmail className='text-blue-600' size={30}/>Offverse.business@gmail.com</li>
+          <li className='flex gap-2 items-center'><FaLocationPin className='text-blue-600'  size={30}/>Golf Course Road, Gurugram, Haryana, 124001</li>
         </ul>
       </div>
       <div className='p-6 text-left'>

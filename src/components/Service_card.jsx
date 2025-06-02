@@ -11,14 +11,14 @@ const Service_card = ({ index, service_name, service_desc }) => {
     >
       {/* Top-left index */}
       <p className="absolute top-2 left-2 text-[120px] font-bold opacity-10 pointer-events-none select-none z-0">
-        {index}
+        {index+1}
       </p>
 
       {/* Content */}
       <div className="relative z-10 space-y-4">
         <h6 className="text-sm font-light">Our Service</h6>
         <h2 className="text-4xl font-bold">{service_name}</h2>
-        <p>{service_desc}</p>
+        <p className='text-justify font-light'>{service_desc}</p>
       </div>
     </motion.div>
   );

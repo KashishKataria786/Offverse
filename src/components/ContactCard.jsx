@@ -11,7 +11,7 @@ const ContactCard = ({head,desc,form, index}) => {
       {/* Foreground content */}
       <div className="relative z-10 space-y-4">
         <h2 className="text-2xl md:text-4xl font-bold">{head}</h2>
-        <p className="text-sm md:text-md">{desc}</p>
+        <p className="text-sm md:text-md text-justify">{desc}</p>
         {form&&<button>Google Form</button>}
       </div>
     </div>

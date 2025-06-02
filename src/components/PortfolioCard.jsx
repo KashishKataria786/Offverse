@@ -9,7 +9,7 @@ const PortfolioCard = ({typeArray, typeOfProject , ProjectLink, projectDescripti
         
         <div className='relative '>
             <img src={videoEditor} ></img>
-            <p className='absolute -top-20 left-0  font-bold text-[200px] z-40 opacity-30'>{index}</p>
+            <p className='absolute -top-20 left-0  font-bold text-[200px] z-40 opacity-30'>{index+1}</p>
         </div>
         <div className='space-y-2'>
             <ul className='flex gap-2'>
@@ -21,7 +21,7 @@ const PortfolioCard = ({typeArray, typeOfProject , ProjectLink, projectDescripti
                 })}
                 </ul>
                 <h3 className='text-xl font-bold text-blue-600'>{typeOfProject}</h3>
-                <p className='text-sm font-light '>{projectDescription}</p>
+                <p className='text-sm font-light text-justify'>{projectDescription}</p>
                 
         </div>
         <div>
