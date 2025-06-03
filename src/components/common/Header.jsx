@@ -17,11 +17,11 @@ const [open,setOpen] = useState(false);
         }
         </div>
         <ul className='hidden md:flex gap-9 px-8'>
-           <li><Link to ='/'>Home</Link></li>
-            <li><Link to ='/about'>About us</Link></li>
-            <li><Link to ='/services'>Services</Link></li>
-            <li><Link to ='/portfolio'>Portfolio</Link></li>
-            <li><Link to ='/contact'>Contact</Link></li>
+           <li><Link    to ='/'>Home</Link></li>
+            <li><Link  to ='/about'>About us</Link></li>
+            <li><Link  to ='/services'>Services</Link></li>
+            <li><Link  to ='/portfolio'>Portfolio</Link></li>
+            <li><Link  to ='/contact'>Contact</Link></li>
         </ul>
     </div>
        <AnimatePresence>
@@ -40,11 +40,11 @@ const [open,setOpen] = useState(false);
   <h2 className='font-bold text-3xl flex gap-1 mb-10'>OFF<span className="text-blue-500">VERSE</span></h2>
             <ul className=' gap-9  text-left text-xl md:text-md space-y-2  '>
               
-            <li ><Link className="font-light  "  to ='/'>Home</Link></li>
-            <li><Link to ='/about'>About us</Link></li>
-            <li><Link to ='/services'>Services</Link></li>
-            <li><Link to ='/portfolio'>Portfolio</Link></li>
-            <li><Link to ='/contact'>Contact</Link></li>
+            <li><Link  onClick={()=>setOpen(false)}  to ='/'>Home</Link></li>
+            <li><Link onClick={()=>setOpen(false)} to ='/about'>About us</Link></li>
+            <li><Link onClick={()=>setOpen(false)} to ='/services'>Services</Link></li>
+            <li><Link onClick={()=>setOpen(false)} to ='/portfolio'>Portfolio</Link></li>
+            <li><Link onClick={()=>setOpen(false)} to ='/contact'>Contact</Link></li>
         </ul>
           </div>
           </motion.div>
