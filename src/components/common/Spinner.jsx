@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 import graphiclogo from '../../assets/404graphic.png'
+
+
 const Spinner = ({ isLoading, setLoading }) => {
   const[percentage,setPercentage]=useState(0);
+
   useEffect(()=>{
     if(percentage <100){
       const timer = setTimeout(()=>{
@@ -17,9 +20,9 @@ const Spinner = ({ isLoading, setLoading }) => {
   },[percentage])
   return (
     <>
-    <div>
+    <div  >
         <img className="w-auto h-[40px]" src={graphiclogo}/>
-      </div>
+    </div>
     <div
       className={`fixed transition-all duration-700 transform ${
         isLoading

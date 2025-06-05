@@ -1,23 +1,26 @@
-import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import graphic404 from "../assets/404graphic.png";
+import { useEffect } from 'react';
 const AboutSection = () => {
+  useEffect(()=>{AOS.init()},[]);
   return (
-    <div className="    p-8 text-left md:space-y-4 space-y-2">
+    <div  className="    p-8 text-left md:space-y-4 space-y-2">
       <div className="md:grid grid-cols-3 justify-start space-y-2">
         <div className="col-span-2 py-4">
-          <h3 className="text-4xl  md:text-8xl ">
+          <h3 data-aos="fade-up" data-aos-delay='1100' data-aos-duration="300" className="text-4xl  md:text-8xl ">
             Behind Every <span className="text-blue-600">Great Brand </span>is{" "}
             <span>Greater Story</span>
           </h3>
         </div>
         <div className="md:py-12">
-          <img src={graphic404} alt="" />
+          <img data-aos="fade-left" data-aos-delay='1200' data-aos-duration="300" src={graphic404} alt="" />
           {/* <h3>this is ou0r only world to maek exciting nad best Video edintg Line in the workd</h3> */}
         </div>
       </div>
       <div className="md:grid  grid-cols-3 justify-center items-center space-y-4  ">
         <div className="col-span-2">
-          <p className="text-justify font-light">
+          <p data-aos="fade-up" data-aos-delay='400' data-aos-duration="300" className="text-justify font-light">
             What started as a shared passion among friends and family quickly
             grew into something bigger. Bound by creativity, trust, and a vision
             to bring ideas to life, we came together to build a studio focused
@@ -31,7 +34,7 @@ const AboutSection = () => {
           </p>
         </div>
         <div className="flex justify-center items-center">
-          <button className="w-full md:w-auto ">Contact us Now </button>
+          <button data-aos="fade-up" data-aos-delay='400' data-aos-duration="300" className="w-full md:w-auto ">Contact us Now </button>
         </div>
       </div>
     </div>
