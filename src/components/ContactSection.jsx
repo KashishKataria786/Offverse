@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from './common/Layout'
 import Graphic_404 from '../assets/404graphic.png'
 import { Link } from 'react-router-dom'
 import Service_card from './Service_card'
 import ContactCard from './ContactCard'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const ContactSection = () => {
+  useEffect(()=>{AOS.init()},[]);
   return (
         <>
-        <h2 className='text-4xl md:text-7xl font-bold text-left px-8 mt-10'><span className='text-blue-600'>Contact </span>us</h2>
-        <div className='md:grid grid-cols-2 gap-10 space-y-10 text-left md:p-8  px-4 py-2'>
+        <h2 data-aos='fade-up' data-aos-delay="1200" data-aos-duration="1000" className='text-4xl md:text-7xl font-bold text-left px-8 mt-10'><span className='text-blue-600'>Contact </span>us</h2>
+        <div data-aos='fade-up' data-aos-delay="1200" data-aos-duration="1000" className='md:grid grid-cols-2 gap-10 space-y-10 text-left md:p-8  px-4 py-2'>
             <div className='space-y-3'>
             <p className=' text-md md:text-2xl font-semibold px-4'>Fill  out the below form</p>
             <button className='w-full md:w-auto'> Google Form </button>

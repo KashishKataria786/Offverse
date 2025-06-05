@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Service_card from '../Service_card'
 import { data } from 'react-router-dom'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Data = [
     {id:1,
         heading:"Video Editing",
@@ -18,10 +19,10 @@ const Data = [
     
 ]
 const ServiceSection = () => {
-
+useEffect(()=>{AOS.init()},[]);
   return (
     <>
-    <div className='py-4 md:px-8 px-4 mt-10'>
+    <div data-aos='fade-up' data-aos-delay="1200" data-aos-duration="1000" className='py-4 md:px-8 px-4 mt-10'>
         <h4 className='text-left text-4xl font-bold md:text-7xl mb-10'>Our<span className='text-blue-600'> Services</span> </h4>
       <div className='md:grid grid-cols-3 gap-5 space-y-10 py-5'>
         {Data?.map((item,index)=>{

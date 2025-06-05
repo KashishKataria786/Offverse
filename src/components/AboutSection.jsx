@@ -5,8 +5,8 @@ import { useEffect } from 'react';
 const AboutSection = () => {
   useEffect(()=>{AOS.init()},[]);
   return (
-    <div  className="    p-8 text-left md:space-y-4 space-y-2">
-      <div className="md:grid grid-cols-3 justify-start space-y-2">
+    <div  className="p-8 text-left md:space-y-4 space-y-2">
+      <div data-aos="fade-up" data-aos-delay='1200' data-aos-duration="1000"   className="md:grid grid-cols-3 justify-start space-y-2">
         <div className="col-span-2 py-4">
           <h3 data-aos="fade-up" data-aos-delay='1100' data-aos-duration="300" className="text-4xl  md:text-8xl ">
             Behind Every <span className="text-blue-600">Great Brand </span>is{" "}
