@@ -3,10 +3,12 @@ import VideoEditorPic from "../../assets/videoeditor.webp"
  import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const StarSection = () => {
 
+  const Navigate=  useNavigate();
   useEffect(()=>{
     AOS.init();
   },[])
@@ -18,12 +20,12 @@ const StarSection = () => {
             <h2  className='text-4xl md:text-6xl font-bold'>We Make Videos Your Audience Will Remember.</h2>
             <h2  className='py-2 '>We are a team of enthusiastic individuals who help brands grow by unleashing the potential of social media</h2>
             <div  className='flex gap-2 text-sm  md:text-md '>
-              <button>
+              <button onClick={()=>Navigate('/contact')}>
               Contact us
             </button>
-            <button>
+            {/* <button>
               Download Borchure
-            </button>
+            </button> */}
             </div>
         </div>  
         <div>

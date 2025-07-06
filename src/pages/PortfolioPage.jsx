@@ -3,28 +3,47 @@ import Layout from '../components/common/Layout'
 import PortfolioCard from '../components/PortfolioCard.jsx'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import amit from '../assets/amit.jpg'
+import motorburst from '../assets/motorburst.png'
+import sukhmani from '../assets/sukhmani.png'
+import kashverse from '../assets/kashverse.png'
 const Data = [
   {
     id:0,
-    typeArray:["Video", "Editing","Thumbnail Design"],
-    typeOfProject:"Influencer Editing" ,
-    ProjectLink :"/about",
-    projectDescription:"Sanjay's captivating Ad video for his SEO course. Edited with attractive animations and to-the-tee transcribing",
+    typeArray:["Video", "Editing"],
+    typeOfProject:"Influencer Management" ,
+    imagz:amit,
+    ProjectLink :"https://www.instagram.com/_aamitrana_/",
+    projectDescription:"Influencing Management of a Sponsored Athelte. From Drafts to production ready Videos and Instagram Management!",
   },
    {
     id:1,
     typeArray:["Video", "Editing","Thumbnail Design"],
-    typeOfProject:"Vide Editing" ,
-    ProjectLink :"/about",
-    projectDescription:"Sanjay's captivating Ad video for his SEO course. Edited with attractive animations and to-the-tee transcribing",
+    typeOfProject:"Video Editing" ,
+    ProjectLink :"https://drive.google.com/drive/u/5/folders/1VJfEqBjvl2stdU2iCZZq50-naJPMYeP2",
+    imagz:sukhmani,
+    projectDescription:"Capturing Little moments and Event ready production of Sukhmani's first Birthday!",
+  },
+   {
+    id:2,
+    typeArray:["Video", "Editing","Thumbnail Design"],
+    typeOfProject:"Thumbnail Editing" ,
+    ProjectLink :"https://www.youtube.com/@Kashverse786",
+    ProjectLink :"https://www.youtube.com/@MOTORBURST",
+    imagz:motorburst,
+    projectDescription:"From YouTube Management to Full-Scale Production and SEO Optimization.",
   },
    {
     id:3,
     typeArray:["Video", "Editing","Thumbnail Design"],
-    typeOfProject:"Thumbnai Editing" ,
-    ProjectLink :"/about",
-    projectDescription:"Sanjay's captivating Ad video for his SEO course. Edited with attractive animations and to-the-tee transcribing",
+    typeOfProject:"Vide Editing" ,
+    
+    ProjectLink :"https://www.youtube.com/@Kashverse786",
+    imagz:kashverse,
+    projectDescription:"From YouTube Management to Full-Scale Production and SEO Optimization.",
   },
+  
+ 
 ]
 
 const PortfolioPage = () => {
@@ -38,7 +57,7 @@ const PortfolioPage = () => {
       <div className='md:grid grid-cols-3 gap-5 space-y-10 py-5'>
         {Data?.map((item,index)=>{
             return (
-                <PortfolioCard key={index} index={index} typeArray={item.typeArray} typeOfProject={item.typeOfProject}  ProjectLink={item.ProjectLink} projectDescription={item.projectDescription}/>
+                <PortfolioCard key={index} index={index} typeArray={item.typeArray} typeOfProject={item.typeOfProject}  ProjectLink={item.ProjectLink} projectDescription={item.projectDescription} imagz={item.imagz}/>
             )
         })}
       </div>

@@ -22,7 +22,7 @@ AOS.init();
           <li  className='flex gap-2 items-center'><FaLocationPin className='text-blue-600'  size={30}/>Golf Course Road, Gurugram, Haryana, 124001</li>
         </ul>
       </div>
-      <div className='p-6 text-left'>
+      {/* <div className='p-6 text-left'>
          <h2  className='text-3xl md:text-6xl font-bold'>Follow us </h2>
          <ul  className='py-4 flex gap-5  '>
           <li><FaSquareInstagram size={30} /></li>
@@ -30,7 +30,7 @@ AOS.init();
           <li><AiFillLinkedin size={30}/></li>
           <li><AiFillFacebook size={30}/></li>
          </ul>
-      </div>
+      </div> */}
     </div>
     <div className='text-[10px] font-light py-2 border-t-1 border-gray-900'>
       <h6>Copyright @offvers.co 2025</h6>
