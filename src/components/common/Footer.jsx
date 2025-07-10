@@ -17,9 +17,9 @@ AOS.init();
         <h2  className='text-3xl md:text-6xl font-bold'>Lets <span className='text-blue-600'>Work Together</span></h2>
         <p>You bring the ideas—we’ll bring them to life. From first draft to final edit, we’ve got your back, handling the details so you can focus on doing what you love.</p>
         <ul className='space-y-4'>
-          <li  className='flex gap-2 items-center'><FaPhone className='text-blue-600'size={30}/>+91 9485686833</li>
+          <li  className='flex gap-2 items-center'><FaPhone className='text-blue-600'size={30}/>+91 9485686863</li>
           <li  className='flex gap-2 items-center'><MdEmail className='text-blue-600' size={30}/>Offverse.business@gmail.com</li>
-          <li  className='flex gap-2 items-center'><FaLocationPin className='text-blue-600'  size={30}/>Golf Course Road, Gurugram, Haryana, 124001</li>
+          <li  className='flex gap-2 items-center'><FaLocationPin className='text-blue-600'  size={30}/>Rohtak,Haryana,India</li>
         </ul>
       </div>
       {/* <div className='p-6 text-left'>
