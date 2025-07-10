@@ -34,7 +34,7 @@ const AboutSection = () => {
           </p>
         </div>
         <div className="flex justify-center items-center">
-          <button data-aos="fade-up" data-aos-delay='400' data-aos-duration="300" className="w-full md:w-auto ">Contact us Now </button>
+{/*           <button data-aos="fade-up" data-aos-delay='400' data-aos-duration="300" className="w-full md:w-auto ">Contact us Now </button> */}
         </div>
       </div>
     </div>
